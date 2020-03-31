@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot name="weed_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find weed_robot_description)/urdf/weed_robot.xacro"/>
+
+<!-- Controladores ROS para Gazebo -->
+<gazebo>
+<plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+  <robotNamespace>/</robotNamespace>
+  <robotSimType>steer_bot_hardware_gazebo/SteerBotHardwareGazebo</robotSimType>
+</plugin>
+</gazebo>
+
+</robot>

@@ -1,0 +1,11 @@
+steer_bot_hardware_gazebo:
+    rear_wheel: 'base_wheel_joint'
+    front_steer: 'base_steer_joint'
+    virtual_rear_wheels: ['fork_wheel_rr_joint', 'fork_wheel_rl_joint']
+    virtual_front_wheels: ['fork_wheel_fr_joint', 'fork_wheel_fl_joint']
+    virtual_front_steers: ['base_fork_fr_joint', 'base_fork_fl_joint']
+
+    # ackermann link mechanism
+    enable_ackermann_link: true
+    wheel_separation_w: 1.054
+    wheel_separation_h: 1.582

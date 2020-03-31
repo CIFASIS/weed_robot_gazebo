@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+<arg name="paused" default="false"/>
+<arg name="meshes" default="true"/>
+
+<!-- inicia gazebo con el field world -->
+<include file="$(find gazebo_ros)/launch/empty_world.launch">
+  <arg name="world_name" value="$(find weed_robot_gazebo)/worlds/empty.world"/>
+  <arg name="debug" value="false" />
+  <arg name="gui" value="true" />
+  <arg name="paused" value="$(arg paused)"/>
+  <arg name="use_sim_time" value="true"/>
+  <arg name="headless" value="false"/>
+</include>
+
+<!-- carga el modelo del robot -->
+<param name="robot_description"
+    command="$(find xacro)/xacro --inorder $(find weed_robot_gazebo)/urdf/gazebo.xacro 
+      meshes:=$(arg meshes)"/>
+
+<!-- publica tf -->
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+
+<!-- carga archivos de configuración -->
+<rosparam file="$(find weed_robot_gazebo)/config/hardware.yaml" command="load"/>
+<rosparam file="$(find weed_robot_gazebo)/config/pids.yaml" command="load"/>
+
+<!-- robot spawner -->
+<node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    args="-urdf -model weed_robot -param robot_description"/>
+
+</launch>
