@@ -16,7 +16,7 @@
 
 <!-- carga el modelo del robot -->
 <param name="robot_description"
-    command="$(find xacro)/xacro --inorder $(find weed_robot_gazebo)/urdf/gazebo.xacro 
+    command="$(find xacro)/xacro $(find weed_robot_gazebo)/urdf/gazebo.xacro 
       meshes:=$(arg meshes)"/>
 
 <!-- publica tf -->
@@ -28,6 +28,6 @@
 
 <!-- robot spawner -->
 <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-    args="-urdf -model weed_robot -param robot_description"/>
+    args="-urdf -model weed_robot -x -10 -param robot_description"/>
 
 </launch>

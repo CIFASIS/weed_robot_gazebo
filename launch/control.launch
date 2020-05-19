@@ -9,4 +9,6 @@
     output="screen" args="steer_drive_controller
                           joint_state_controller"/>
 
+<!-- rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/steer_drive_controller/cmd_vel -->
+
 </launch>

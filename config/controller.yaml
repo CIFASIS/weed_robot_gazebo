@@ -6,8 +6,8 @@ joint_state_controller:
 # Wheel & Steer
 steer_drive_controller:
   type                          : "steer_drive_controller/SteerDriveController"
-  rear_wheel                    : 'base_wheel_joint'
-  front_steer                   : 'base_steer_joint'
+  rear_wheel                    : 'chassis_wheel_joint'
+  front_steer                   : 'chassis_steer_joint'
   #publish_rate                  : 100
 
   pose_covariance_diagonal      : [0.00001, 0.00001, 1000000000000.0, 1000000000000.0, 1000000000000.0, 0.001]
