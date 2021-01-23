@@ -1,0 +1,1306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.6">
+  <world name="simple_field">
+    <light name="sun" type="directional">
+      <cast_shadows>1</cast_shadows>
+      <pose frame="">0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type="adiabatic" />
+    <physics name="default_physics" default="0" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <gui fullscreen="0">
+      <camera name="user_camera">
+        <pose frame="">0 0 35 0 1.56 1.56</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <state world_name="simple_field">
+      <light name="sun">
+        <pose frame="">0 0 10 0 -0 0</pose>
+      </light>
+      <model name="ground_plane">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop1">
+        <pose frame="">-8.06 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop2">
+        <pose frame="">-7.54 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop3">
+        <pose frame="">-7.02 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop4">
+        <pose frame="">-6.50 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop5">
+        <pose frame="">-5.98 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop6">
+        <pose frame="">-5.46 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop7">
+        <pose frame="">-4.94 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop8">
+        <pose frame="">-4.42 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop9">
+        <pose frame="">-3.90 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop10">
+        <pose frame="">-3.38 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop11">
+        <pose frame="">-2.86 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop12">
+        <pose frame="">-2.34 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop13">
+        <pose frame="">-1.82 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop14">
+        <pose frame="">-1.30 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop15">
+        <pose frame="">-0.78 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop16">
+        <pose frame="">-0.26 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop17">
+        <pose frame="">0.26 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop18">
+        <pose frame="">0.78 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop19">
+        <pose frame="">1.30 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop20">
+        <pose frame="">1.82 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop21">
+        <pose frame="">2.34 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop22">
+        <pose frame="">2.86 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop23">
+        <pose frame="">3.38 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop24">
+        <pose frame="">3.90 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop25">
+        <pose frame="">4.42 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop26">
+        <pose frame="">4.94 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop27">
+        <pose frame="">5.46 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop28">
+        <pose frame="">5.98 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop29">
+        <pose frame="">6.50 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop30">
+        <pose frame="">7.02 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop31">
+        <pose frame="">7.54 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop32">
+        <pose frame="">8.06 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+    </state>
+    <model name="ground_plane">
+      <static>1</static>
+      <link name="ground_plane">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 20</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 20</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.40 0.29 0.21 1.00</ambient>
+            <diffuse>0.40 0.29 0.21 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name="crop1">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop2">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop3">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop4">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop5">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop6">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop7">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop8">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop9">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop10">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop11">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop12">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop13">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop14">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop15">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop16">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop17">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop18">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop19">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop20">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop21">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop22">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop23">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop24">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop25">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop26">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop27">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop28">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop29">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop30">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop31">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop32">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.32 10.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+  </world>
+</sdf>
