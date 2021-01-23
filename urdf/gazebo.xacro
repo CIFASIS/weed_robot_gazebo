@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <robot name="weed_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+<xacro:arg name="world_odom" default="false"/>
+
 <xacro:include filename="$(find weed_robot_description)/urdf/weed_robot.xacro"/>
 
 <!-- Controladores ROS para Gazebo -->
@@ -8,6 +10,13 @@
 <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
   <robotNamespace>/</robotNamespace>
   <robotSimType>steer_bot_hardware_gazebo/SteerBotHardwareGazebo</robotSimType>
+</plugin>
+
+<plugin name="world_odom_publisher" filename="libworld_odom_publisher.so">
+  <xacro:if value="$(arg world_odom)">
+    <world_odom/>
+  </xacro:if>
+  <publish_frequency>10.0</publish_frequency>
 </plugin>
 </gazebo>
 

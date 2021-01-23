@@ -4,6 +4,7 @@
 <arg name="paused" default="false"/>
 <arg name="meshes" default="true"/>
 <arg name="world" default="empty"/> <!-- empty, field, obstacles, robot, small_field -->
+<arg name="world_odom" default="true"/>
 <arg name="pose" default="-x -8.84 -y -13 -Y 1.570796327"/>
 <arg name="gui" default="true"/>
 
@@ -20,7 +21,7 @@
 <!-- carga el modelo del robot -->
 <param name="robot_description"
     command="$(find xacro)/xacro $(find weed_robot_gazebo)/urdf/gazebo.xacro 
-      meshes:=$(arg meshes)"/>
+      meshes:=$(arg meshes) world_odom:=$(arg world_odom)"/>
 
 <!-- publica tf -->
 <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
@@ -32,5 +33,9 @@
 <!-- robot spawner -->
 <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
     args="-urdf -model weed_robot -param robot_description $(arg pose)"/>
+
+<include file="$(find weed_robot_gazebo)/launch/control.launch">
+  <arg name="world_odom" value="$(arg world_odom)"/>
+</include>
 
 </launch>
