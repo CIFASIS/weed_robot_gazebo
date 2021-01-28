@@ -98,7 +98,7 @@ class WorldOdomPublisher : public ModelPlugin {
         geometry_msgs::TransformStamped ts;
         ts.header.stamp = currentTime;
         ts.header.frame_id = "odom";
-        ts.child_frame_id = "base_link";
+        ts.child_frame_id = "base_link_vis";
 
         ts.transform.translation.x = x;
         ts.transform.translation.y = y;
@@ -111,7 +111,7 @@ class WorldOdomPublisher : public ModelPlugin {
         nav_msgs::Odometry odom;
         odom.header.stamp = currentTime;
         odom.header.frame_id = "odom";
-        odom.child_frame_id = "base_link";
+        odom.child_frame_id = "base_link_vis";
 
         odom.pose.pose.position.x = x;
         odom.pose.pose.position.y = y;

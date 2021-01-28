@@ -11,11 +11,11 @@ Panels:
         - /TF1/Frames1
         - /TF1/Tree1
         - /TF1/Tree1/dummy_link1
-        - /TF1/Tree1/dummy_link1/base_link1
-        - /TF1/Tree1/dummy_link1/base_link1/fork_fl_link1
-        - /TF1/Tree1/dummy_link1/base_link1/fork_fr_link1
-        - /TF1/Tree1/dummy_link1/base_link1/fork_rl_link1
-        - /TF1/Tree1/dummy_link1/base_link1/fork_rr_link1
+        - /TF1/Tree1/dummy_link1/base_link_vis1
+        - /TF1/Tree1/dummy_link1/base_link_vis1/fork_fl_link1
+        - /TF1/Tree1/dummy_link1/base_link_vis1/fork_fr_link1
+        - /TF1/Tree1/dummy_link1/base_link_vis1/fork_rl_link1
+        - /TF1/Tree1/dummy_link1/base_link_vis1/fork_rr_link1
       Splitter Ratio: 0.675461769
     Tree Height: 463
   - Class: rviz/Selection
@@ -70,7 +70,7 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_link:
+        base_link_vis:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -135,7 +135,7 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
-        base_link:
+        base_link_vis:
           Value: true
         dummy_link:
           Value: false
@@ -164,7 +164,7 @@ Visualization Manager:
       Show Names: true
       Tree:
         dummy_link:
-          base_link:
+          base_link_vis:
             fork_fl_link:
               wheel_fl_link:
                 {}
@@ -185,7 +185,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: base_link
+    Fixed Frame: base_link_vis
     Frame Rate: 30
   Name: root
   Tools:
