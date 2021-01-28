@@ -17,3 +17,7 @@ Para comandar el robot mediante el teclado se puede hacer uso del paquete [teleo
 ```
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/steer_drive_controller/cmd_vel
 ```
+
+El script [utils/world_generator.py](utils/world_generator.py) se utiliza para generar escenarios de simulación *world*.
+Se pueden configurar características del campo como sus dimensiones, cabeceras, ancho de surcos, etc.
+Por otro lado, las hileras de cultivos se pueden generar con cajas simples o con las mallas de plantas y el suelo se puede generar con o sin textura.
