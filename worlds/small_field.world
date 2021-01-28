@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <sdf version="1.6">
-  <world name="simple_field">
+  <world name="small_field">
     <light name="sun" type="directional">
       <cast_shadows>1</cast_shadows>
       <pose frame="">0 0 10 0 0 0</pose>
@@ -16,7 +16,7 @@
     </light>
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
-    <atmosphere type="adiabatic" />
+    <atmosphere type="adiabatic"/>
     <physics name="default_physics" default="0" type="ode">
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1</real_time_factor>
@@ -41,7 +41,7 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <state world_name="simple_field">
+    <state world_name="small_field">
       <light name="sun">
         <pose frame="">0 0 10 0 -0 0</pose>
       </light>
@@ -49,100 +49,118 @@
         <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
       </model>
       <model name="crop1">
-        <pose frame="">-8.06 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-9.62 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop2">
-        <pose frame="">-7.54 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-9.10 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop3">
-        <pose frame="">-7.02 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-8.58 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop4">
-        <pose frame="">-6.50 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-8.06 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop5">
-        <pose frame="">-5.98 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-7.54 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop6">
-        <pose frame="">-5.46 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-7.02 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop7">
-        <pose frame="">-4.94 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-6.50 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop8">
-        <pose frame="">-4.42 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-5.98 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop9">
-        <pose frame="">-3.90 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-5.46 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop10">
-        <pose frame="">-3.38 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-4.94 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop11">
-        <pose frame="">-2.86 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-4.42 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop12">
-        <pose frame="">-2.34 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-3.90 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop13">
-        <pose frame="">-1.82 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-3.38 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop14">
-        <pose frame="">-1.30 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-2.86 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop15">
-        <pose frame="">-0.78 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-2.34 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop16">
-        <pose frame="">-0.26 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-1.82 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop17">
-        <pose frame="">0.26 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-1.30 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop18">
-        <pose frame="">0.78 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-0.78 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop19">
-        <pose frame="">1.30 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">-0.26 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop20">
-        <pose frame="">1.82 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">0.26 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop21">
-        <pose frame="">2.34 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">0.78 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop22">
-        <pose frame="">2.86 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">1.30 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop23">
-        <pose frame="">3.38 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">1.82 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop24">
-        <pose frame="">3.90 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">2.34 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop25">
-        <pose frame="">4.42 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">2.86 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop26">
-        <pose frame="">4.94 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">3.38 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop27">
-        <pose frame="">5.46 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">3.90 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop28">
-        <pose frame="">5.98 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">4.42 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop29">
-        <pose frame="">6.50 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">4.94 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop30">
-        <pose frame="">7.02 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">5.46 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop31">
-        <pose frame="">7.54 0.00 0.15 0.00 0.00 0.00</pose>
+        <pose frame="">5.98 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
       <model name="crop32">
+        <pose frame="">6.50 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop33">
+        <pose frame="">7.02 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop34">
+        <pose frame="">7.54 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop35">
         <pose frame="">8.06 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop36">
+        <pose frame="">8.58 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop37">
+        <pose frame="">9.10 0.00 0.15 0.00 0.00 0.00</pose>
+      </model>
+      <model name="crop38">
+        <pose frame="">9.62 0.00 0.15 0.00 0.00 0.00</pose>
       </model>
     </state>
     <model name="ground_plane">
@@ -152,7 +170,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>20 20</size>
+              <size>20 30</size>
             </plane>
           </geometry>
           <surface>
@@ -169,7 +187,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>20 20</size>
+              <size>20 30</size>
             </plane>
           </geometry>
           <material>
@@ -189,7 +207,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -205,7 +223,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -224,7 +242,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -240,7 +258,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -259,7 +277,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -275,7 +293,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -294,7 +312,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -310,7 +328,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -329,7 +347,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -345,7 +363,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -364,7 +382,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -380,7 +398,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -399,7 +417,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -415,7 +433,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -434,7 +452,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -450,7 +468,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -469,7 +487,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -485,7 +503,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -504,7 +522,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -520,7 +538,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -539,7 +557,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -555,7 +573,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -574,7 +592,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -590,7 +608,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -609,7 +627,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -625,7 +643,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -644,7 +662,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -660,7 +678,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -679,7 +697,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -695,7 +713,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -714,7 +732,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -730,7 +748,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -749,7 +767,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -765,7 +783,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -784,7 +802,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -800,7 +818,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -819,7 +837,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -835,7 +853,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -854,7 +872,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -870,7 +888,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -889,7 +907,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -905,7 +923,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -924,7 +942,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -940,7 +958,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -959,7 +977,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -975,7 +993,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -994,7 +1012,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1010,7 +1028,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -1029,7 +1047,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1045,7 +1063,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -1064,7 +1082,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1080,7 +1098,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -1099,7 +1117,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1115,7 +1133,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -1134,7 +1152,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1150,7 +1168,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -1169,7 +1187,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1185,7 +1203,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -1204,7 +1222,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1220,7 +1238,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -1239,7 +1257,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1255,7 +1273,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>
@@ -1274,7 +1292,7 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1290,7 +1308,217 @@
           <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
           <geometry>
             <box>
-              <size>0.32 10.00 0.30</size>
+              <size>0.24 18.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop33">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.24 18.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.24 18.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop34">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.24 18.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.24 18.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop35">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.24 18.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.24 18.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop36">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.24 18.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.24 18.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop37">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.24 18.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.24 18.00 0.30</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>1</static>
+    </model>
+    <model name="crop38">
+      <link name="crop_line">
+        <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+        <visual name="visual">
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.24 18.00 0.30</size>
+            </box>
+          </geometry>
+          <cast_shadows>1</cast_shadows>
+          <material>
+            <ambient>0.13 0.60 0.33 1.00</ambient>
+            <diffuse>0.18 0.85 0.47 1.00</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+        </visual>
+        <collision name="collision">
+          <max_contacts>10</max_contacts>
+          <pose frame="">0.00 0.00 0.00 0.00 0.00 0.00</pose>
+          <geometry>
+            <box>
+              <size>0.24 18.00 0.30</size>
             </box>
           </geometry>
           <surface>

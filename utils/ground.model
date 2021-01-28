@@ -1,0 +1,29 @@
+<model name='ground_plane'>
+  <static>1</static>
+  <link name='ground_plane'>
+    <collision name='collision'>
+      <geometry>
+        <plane>
+          <normal>0 0 1</normal>
+        </plane>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>50</mu2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
+    <visual name='visual'>
+      <cast_shadows>0</cast_shadows>
+      <geometry>
+        <plane>
+          <normal>0 0 1</normal>
+        </plane>
+      </geometry>
+    </visual>
+    <kinematic>0</kinematic>
+  </link>
+</model>
