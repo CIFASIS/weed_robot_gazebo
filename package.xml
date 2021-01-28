@@ -38,6 +38,7 @@
   <export>
     <gazebo_ros plugin_path="${prefix}/../../lib" gazebo_media_path="${prefix}" />
     <gazebo_ros gazebo_media_path="${prefix}/meshes"/>
+    <gazebo_ros gazebo_model_path="${prefix}/models"/>
   </export>
 
 </package>

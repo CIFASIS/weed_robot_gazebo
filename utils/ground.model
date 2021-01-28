@@ -17,6 +17,7 @@
       </surface>
     </collision>
     <visual name='visual'>
+      <pose frame="">0.00 0.00 0.02 0.00 0.00 0.00</pose>
       <cast_shadows>0</cast_shadows>
       <geometry>
         <plane>

@@ -194,7 +194,7 @@ def createPlants(x, y, z, material, name, meshes):
     SubElement(model, 'static').text = '1'
     return model
 
-def createFieldWorld(name, params, meshes=True):
+def createFieldWorld(name, params, meshes=True, textures=True):
     parser = XMLParser(ns_clean=True, remove_blank_text=True)
 
     tree = parse('empty.world', parser)
@@ -208,7 +208,15 @@ def createFieldWorld(name, params, meshes=True):
     # agrega el suelo
     ground = parse('ground.model', parser).getroot()
     groundVisual = ground.find('link').find('visual')
-    groundVisual.append(GROUND.createElement())
+    if textures:
+        material = Element('material')
+        script = SubElement(material, 'script')
+        SubElement(script, 'uri').text = 'model://field_ground_plane/materials/scripts'
+        SubElement(script, 'uri').text = 'model://field_ground_plane/materials/textures'
+        SubElement(script, 'name').text = 'FieldGroundPlane/Image'
+    else:
+        material = GROUND.createElement()
+    groundVisual.append(material)
     groundVisualSize = Element('size')
     groundVisualSize.text = "%d %d" % (params.width, params.depth)
     groundVisual.find('geometry').find('plane').append(groundVisualSize)
@@ -241,9 +249,9 @@ def createFieldWorld(name, params, meshes=True):
 params = FieldParameters(
     width=20, depth=30, lineNum=38, headland=6,
     ridge=0.24, furrow=0.28, cropHeight=0.3)
-createFieldWorld("small_field", params, meshes=False)
+createFieldWorld("small_field", params, meshes=False, textures=False)
 """
 params = FieldParameters(
     width=42.4, depth=35.2, lineNum=76, headland=9,
     ridge=0.24, furrow=0.28, cropHeight=0.3)
-createFieldWorld("field_plants", params, meshes=True)
+createFieldWorld("field_plants", params, meshes=True, textures=True)
