@@ -13,9 +13,16 @@
   <!-- Dependencies -->
   <buildtool_depend>catkin</buildtool_depend>
   
+  <depend>angles</depend>
+  <depend>control_toolbox</depend>
+  <depend>gazebo_ros_control</depend>
+  <depend>hardware_interface</depend>
+  <depend>joint_limits_interface</depend>
+  
   <build_depend>gazebo_ros</build_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>rospy</build_depend>
+  <build_depend>gazebo</build_depend>
   
   <exec_depend>controller_manager</exec_depend>
   <exec_depend>controller_interface</exec_depend>
@@ -29,6 +36,7 @@
   <exec_depend>roslaunch</exec_depend>
   <exec_depend>rviz</exec_depend>
   <exec_depend>xacro</exec_depend>
+  <exec_depend>ackermann_steering_controller</exec_depend>
   
   <build_export_depend>gazebo_ros</build_export_depend>
   <build_export_depend>roscpp</build_export_depend>
@@ -39,6 +47,7 @@
     <gazebo_ros plugin_path="${prefix}/../../lib" gazebo_media_path="${prefix}" />
     <gazebo_ros gazebo_media_path="${prefix}/meshes"/>
     <gazebo_ros gazebo_model_path="${prefix}/models"/>
+    <gazebo_ros_control plugin="${prefix}/steer_bot_hardware_gazebo_plugins.xml"/>
   </export>
 
 </package>

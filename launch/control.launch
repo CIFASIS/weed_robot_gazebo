@@ -7,13 +7,13 @@
 <rosparam file="$(find weed_robot_gazebo)/config/controller.yaml" command="load"/>
 
 <group if="$(eval world_odom)">
-  <rosparam param="steer_drive_controller/enable_odom_tf">false</rosparam>
+  <rosparam param="mobile_base_controller/enable_odom_tf">false</rosparam>
 </group>
 
 <!-- load the controllers -->
 <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" 
-        args="steer_drive_controller joint_state_controller"/>
+        args="ackermann_steering_controller joint_state_controller"/>
 
-<!-- rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/steer_drive_controller/cmd_vel -->
+<!-- rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/ackermann_steering_controller/cmd_vel -->
 
 </launch>
