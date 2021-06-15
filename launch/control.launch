@@ -7,7 +7,7 @@
 <rosparam file="$(find weed_robot_gazebo)/config/controller.yaml" command="load"/>
 
 <group if="$(eval world_odom)">
-  <rosparam param="mobile_base_controller/enable_odom_tf">false</rosparam>
+  <rosparam param="ackermann_steering_controller/enable_odom_tf">false</rosparam>
 </group>
 
 <!-- load the controllers -->
