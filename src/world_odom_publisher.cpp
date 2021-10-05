@@ -32,6 +32,7 @@ class WorldOdomPublisher : public ModelPlugin {
             std::cout << "Se utiliza la odometría real del robot.\n";
         } else {
             std::cout << "Se utiliza la odometría del controlador.\n";
+            return;
         }
 
         if (_sdf->HasElement("publish_frequency")) {
