@@ -29,9 +29,9 @@ class WorldOdomPublisher : public ModelPlugin {
     public: void Load(physics::ModelPtr _model, sdf::ElementPtr _sdf) {
 
         if (_sdf->HasElement("world_odom")) {
-            std::cout << "Se utiliza la odometría real del robot.\n";
+            std::cout << "Real robot odometry is used.\n";
         } else {
-            std::cout << "Se utiliza la odometría del controlador.\n";
+            std::cout << "Controller odometry is used.\n";
             return;
         }
 

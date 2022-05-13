@@ -200,12 +200,12 @@ def createFieldWorld(name, params, meshes=True, textures=True):
     tree = parse('empty.world', parser)
     sdf = tree.getroot()
 
-    # le asigna el nombre al world
+    # assigns the name to the world
     world = sdf.find('world')
     world.set('name', name)
     world.find('state').set('world_name', name)
         
-    # agrega el suelo
+    # adds the ground
     ground = parse('ground.model', parser).getroot()
     groundVisual = ground.find('link').find('visual')
     if textures:
@@ -226,13 +226,13 @@ def createFieldWorld(name, params, meshes=True, textures=True):
     groundCollision.find('geometry').find('plane').append(groundCollisionSize)
     addModel(world, ground, Pose(0, 0, 0, 0, 0, 0))
 
-    # agrega las líneas de cultivos
+    # adds crop rows
     start = - params.width / 2.0 + params.getSideland()
     if -start * 2 > params.width:
         raise Exception("Demasiadas filas de cultivos")
     count = 1
     while count <= params.lineNum:
-        # modelo para línea de cultivo
+        # model for the crop rows
         crop = createPlants(
             params.ridge, 
             params.depth - 2 * params.headland,

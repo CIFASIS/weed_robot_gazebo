@@ -1,22 +1,28 @@
 # weed_robot_gazebo
 
-Simulación del robot desmalezador en Gazebo.
+Simulation of the weeding robot in Gazebo.
 
-Para ejecutar la simulación usar [launch/gazebo.launch](launch/gazebo.launch). Este lanzador carga el modelo a partir de lo definido en el archivo [urdf/gazebo.xacro](urdf/gazebo.xacro), que a su vez utiliza la descripción del robot del paquete [weed_robot_description](https://repositorio.cifasis-conicet.gov.ar/rodes/weed_robot_description). Si se ejecuta con el parámetro *meshes:=false*, se utilizará un modelo simplificado formado por figuras geométricas básicas, lo cual hace que la simulación consuma considerablemente menos recursos.
+To run the simulation use [launch/gazebo.launch](launch/gazebo.launch).
+This launcher loads the robot model from the xacro file [urdf/gazebo.xacro](urdf/gazebo.xacro), which in turn uses the robot description from the package **weed_robot_description**.
+If the parameter value *meshes:=false* is used, a simplified model consisting of basic geometric shapes is loaded, which makes the simulation considerably less resource-consuming.
 
 ![Screenshot](img/gazebo.png)
 
-Se implementó el nodo [src/world_odom_publisher.cpp](src/world_odom_publisher.cpp) que publica el *ground-truth* de la odometría obtenida desde la ubicación real del robot en Gazebo.
+The [src/world_odom_publisher.cpp](src/world_odom_publisher.cpp) node was implemented that publishes the *ground-truth* of the odometry obtained from the actual robot location in Gazebo.
 
-La carpeta [meshes](meshes) contiene mallas 3D en formato STL de 3 plantas de soja de diferentes tamaños y formas. Estas mallas están separadas por nivel de resolución en carpetas. Los escenarios de simulación [worlds/field_plants.world](worlds/field_plants.world) y [worlds/field_small_plants.world](worlds/field_small_plants.world) utilizan estas mallas en su versión de menor resolución.
+The folder [meshes](meshes) contains 3D meshes in STL format of 3 soybean plants of different sizes and shapes.
+These meshes are separated in subfolders by resolution level.
+The simulation scenarios [worlds/field_plants.world](worlds/field_plants.world) and [worlds/field_small_plants.world](worlds/field_small_plants.world) use these meshes in their lower resolution version.
 
-El script [utils/world_generator.py](utils/world_generator.py) se utiliza para generar escenarios de simulación *world*.
-Se pueden configurar características del campo como sus dimensiones, cabeceras, ancho de surcos, etc.
-Por otro lado, las hileras de cultivos se pueden generar con cajas simples o con las mallas de plantas y el suelo se puede generar con o sin textura.
+The script [utils/world_generator.py](utils/world_generator.py) can be used to generate *world* simulation scenarios.
+Field characteristics such as dimensions, headlands, furrow widths, etc. can be configured.
+On the other hand, crop rows can be generated with simple boxes or with plant meshes and the soil can be generated with or without using texture.
 
-Para el control se utiliza el paquete [ackermann_steering_controller](http://wiki.ros.org/ackermann_steering_controller). El mismo se suscribe al topic */ackermann_steering_controller/cmd_vel* donde recibe mensajes del tipo [geometry_msgs/Twist Message](http://docs.ros.org/melodic/api/geometry_msgs/html/msg/Twist.html). De dichos mensajes solo se utilizan los componentes **linear.x** y **angular.z**, el resto se ignora.
+The package [ackermann_steering_controller](http://wiki.ros.org/ackermann_steering_controller) is used for the control of the robot.
+It subscribes to the topic */ackermann_steering_controller/cmd_vel* where messages of type [geometry_msgs/Twist Message](http://docs.ros.org/melodic/api/geometry_msgs/html/msg/Twist.html) are received. 
+Of these messages only the **linear.x** and **angular.z** components are used, the rest are ignored.
 
-Para comandar el robot mediante el teclado se puede hacer uso del paquete [teleop_twist_keyboard](http://wiki.ros.org/teleop_twist_keyboard) redirigiendo el topic en el cual publica de la siguiente manera:
+To command the robot with the keyboard the package [teleop_twist_keyboard](http://wiki.ros.org/teleop_twist_keyboard) can be used redirecting the topic in which it publishes as follows:
 
 ```
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/ackermann_steering_controller/cmd_vel

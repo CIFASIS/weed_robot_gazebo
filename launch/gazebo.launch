@@ -8,7 +8,7 @@
 <arg name="pose" default="-x -8.84 -y -13 -Y 1.570796327"/>
 <arg name="gui" default="true"/>
 
-<!-- inicia gazebo con el field world -->
+<!-- starts gazebo with he given world -->
 <include file="$(find gazebo_ros)/launch/empty_world.launch">
   <arg name="world_name" value="$(find weed_robot_gazebo)/worlds/$(arg world).world"/>
   <arg name="debug" value="false" />
@@ -18,15 +18,15 @@
   <arg name="headless" value="false"/>
 </include>
 
-<!-- carga el modelo del robot -->
+<!-- loads robot model -->
 <param name="robot_description"
     command="$(find xacro)/xacro $(find weed_robot_gazebo)/urdf/gazebo.xacro 
       meshes:=$(arg meshes) world_odom:=$(arg world_odom)"/>
 
-<!-- publica tf -->
+<!-- publishes tf -->
 <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
 
-<!-- carga archivos de configuración -->
+<!-- loads configuration files -->
 <rosparam file="$(find weed_robot_gazebo)/config/hardware.yaml" command="load"/>
 <rosparam file="$(find weed_robot_gazebo)/config/pids.yaml" command="load"/>
 
