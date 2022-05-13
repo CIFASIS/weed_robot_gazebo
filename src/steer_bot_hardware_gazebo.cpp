@@ -264,7 +264,7 @@ namespace steer_bot_hardware_gazebo
   {
     // wheel
     //-- wheel joint names
-    rear_wheel_jnt_name_.empty();
+    rear_wheel_jnt_name_.clear();
     virtual_rear_wheel_jnt_names_.clear();
     //-- actual rear wheel joint
     rear_wheel_jnt_pos_ = 0;
@@ -284,7 +284,7 @@ namespace steer_bot_hardware_gazebo
 
     // steer
     //-- steer joint names
-    front_steer_jnt_name_.empty();
+    front_steer_jnt_name_.clear();
     virtual_front_steer_jnt_names_.clear();
     //-- front steer joint
     front_steer_jnt_pos_ = 0;
